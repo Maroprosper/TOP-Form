@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+:root{
+    --color: #47422a;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+}
+input{
+    display: block;
+    margin: 0 0 4px;
+    border-radius: 5px;
+    padding: 2px 4px;  
+} 
+label{
+    line-height: 0.05px;
+    font-size: 9px;
+}
+p{
+    font-weight: bolder;
+    margin: 6vh 0 0;
+    font-size:14px;
+}
+.bottom > p{
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 4vh;
+}
+.left{
+    height: 100vh;
+    width: 50vw;
+    position: relative;
+}
+.right{
+    height: 100vh;
+    width: 50vw;
+    display:flex;
+    margin: auto;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+h4{
+    margin:-2vh 0 1.5vh;
+    font-size: 14px;
+}
+.header{
+    z-index: 2;
+    color: white;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left:0;
+    font-size: 2.5vw;
+    height: 10vh;
+    padding: auto;
+    top: 30%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.middle{
+    z-index: 2;
+    box-shadow: 2px 2px 0.5px 1px rgba(78, 77, 77, 0.1);
+}
+.top, .bottom, .middle{
+    height:calc(100vh/3);
+    padding: calc(0.02*100vw);
+}
+.top, .bottom{
+    background-color: #fffbf8;
+}
+.left img{
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+main{
+    display:flex;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:100%;
+}   
+.form{
+    width: 100%;
+    display: flex;
+    gap: calc(0.05*100vw);
+}
+button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--color);
+    font-weight: bold;
+    color: white;
+    border: none;
+}
+input{
+    border:2px solid #E5E7EB;
+    background-color: whitesmoke;
+    outline: none;
+    box-shadow: 0.5px 0.5px 1px 0.5px rgba(221, 221, 221, 0.1);
+}
+.credit{
+    display: flex;
+    justify-content: center;
+}
+.credit > p{
+    position:absolute;
+    z-index: 2;
+    color: whitesmoke;
+    font-size: 1vw;
+    margin: 0 0.5vw 3vw;
+    top: 96%;
+    text-align: center;
+    display: inline-block;
+}
+input:focus{
+    border: 2px solid cadetblue;
+    outline: none;
+}
+input:invalid{
+    border: 2px solid red;
+    outline: none;
+}
+.message{
+    font-size: 10px;
+    margin: -1px 0;
+    color: maroon;
+}
+span{
+    font-weight: lighter;
+    font-style: italic;
+}
+a{
+    text-decoration: none;
+    color: var(--color);
+}

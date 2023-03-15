@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+   <main>
+        <section class="left">
+            <img src="media/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg">
+            <div class="header">
+                <h1><span>sabi</span>Devs</h1>
+            </div>
+            <div class="credit">
+                <p>Photo by Alexandre Debieve on Unsplash</p>
+            </div>
+        </section>
+        <section class="right">
+                <section class="top">
+                    <div class="description">
+                        <p class="words">This is not the real form for SabiDevs! You know you need something
+                            like this in your life to help you realize your deepest dreams.
+                            Sign up  now to get started.</p>
+                        <p class="action">You know you want this.</p>
+                    </div>
+                </section>
+                <section class="middle">
+                    <h4>Let's do this!</h4>
+                <form action="">
+                    <div class="form">
+                        <div class="leftside">
+                            <label for="firstname">FIRST NAME</label>
+                            <input type="text" name="firstname" id="firstname">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password" class="error">
+                            <p class="message"></p>
+                        </div>
+                        <div class="rightside">
+                            <label for="lastname">LAST NAME</label>
+                            <input type="text" name="lastname" id="lastname">
+                            <label for="telephone">PHONE NUMBER</label>
+                            <input type="tel" name="phoneNumber" id="telephone">
+                            <label for="repassword">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm" id="repassword" class="error">
+                        </div>
+                    </div>
+                </section>
+                <section class="bottom">
+                <button type="submit">Create Account</button>
+                </form>
+                <p>Already have an account? <a href="#">Log in</a></p> 
+                </section>
+        </section>
+   </main> 
+</body>
+</html>
